@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color:white;
+    background-color: black;
+}
+
+/* MAIN */
+
+/* PAGE 1 */
+#page1{
+    height: 100vh;
+    display: flex;
+    border: 4px solid #FFE81F;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#background-video{
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 1;
+    bottom: 1;
+    z-index: -1;   
+}
+
+#starslogo{
+    text-align: center;
+    -webkit-text-stroke: 4px #FFE81F;
+    font-size: 140px;
+    margin-bottom: 20px;
+}
+
+#iconic-quote{
+    color: #FFE81F;
+    font-size: 60px;
+    font-family: 'Star Jedi';
+}
+.tracking-in-expand-fwd {
+	-webkit-animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
+	        animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
+}
+
+/* PAGE 2 */
+#page2{
+    height: 100vh;
+    border: 4px solid #FFE81F;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titre{
+    border: 4px solid #FFE81F;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Star Jedi';
+    text-align: center;
+    padding: 10px;
+}
+.lestrois{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.poster{
+    width: 180px;
+    height: 270px;
+    border-radius: 2px;
+}
+.poster:hover{
+    width: 200px;
+    height: 300px;
+}
+
+/* MOVIE 1 */
+.spiderverse{
+    width: 26%;
+    height: 80%;
+    border: 4px solid #FFE81F;
+    padding: 6px;
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.name{
+    font-size: 16px;
+    font-weight: bold;
+}
+#miles{
+    background-image: url("spider-man-verse-poster.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 10px #FFE81F;
+}
+
+/* MOVIE 2 */
+.dead-poets-society{
+    width: 26%;
+    height: 80%;
+    border: 4px solid #FFE81F;
+    padding: 6px;
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+#poets{
+    background-image: url("dead-poets-society-poster.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 10px #FFE81F;
+}
+
+/* MOVIE 3 */
+.tenet{
+    width: 26%;
+    height: 80%;
+    border: 4px solid #FFE81F;
+    padding: 6px;
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+#protagonist{
+    background-image: url("tenet-poster.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 10px #FFE81F;
+}
+
+/* PAGE 3 */
+#page3{
+    height: 100vh;
+    background-color: black;
+    border: 4px solid #FFE81F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TVSHOW 1 */
+.loki{
+    width: 26%;
+    height: 80%;
+    border: 4px solid #FFE81F;
+    padding: 6px;
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.name{
+    font-size: 16px;
+    font-weight: bold;
+}
+#green{
+    background-image: url("loki-poster.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 10px #FFE81F;
+}
+
+
+/* TVSHOW 2 */
+.dp{
+    width: 26%;
+    height: 80%;
+    border: 4px solid #FFE81F;
+    padding: 6px;
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.name{
+    font-size: 16px;
+    font-weight: bold;
+}
+#military{
+    background-image: url("dp-poster.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 10px #FFE81F;
+}
+
+/* TVSHOW 3 */
+.abbottelementary {
+    width: 26%;
+    height: 80%;
+    border: 4px solid #FFE81F;
+    padding: 6px;
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.name{
+    font-size: 16px;
+    font-weight: bold;
+}
+#school{
+    background-image: url("abbott-poster.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 10px #FFE81F;
+}
+
+/* FOOTER */
+footer{
+    height: 100vh;
+    background-color: black;
+    background-image: url("kylo red.gif");
+    background-size: cover;
+    border: 4px solid #FFE81F;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-un{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #FFE81F;
+}
+.myid{
+    font-size: 28px;
+    font-weight: bold;
+}
+.occupation,.location{
+    font-size: 14px;
+}
+
+.contact-deux{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2px solid #FFE81F;
+    padding: 10px;
+}
+.social{
+    width:20px;
+}
+.copyright{
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #FFE81F;
+}
+.contact-trois{
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid #FFE81F;
+}
+
+/*format portable*/
+@media (max-width: 767px) {
+    #background-video {display: none;}
+
+    /* PAGE 1 */
+    #page1 {
+      background-image: url("saber\ double\ light.gif");
+      background-size: cover;
+      border: 4px solid #EB212E;
+    }
+    #starslogo{
+        text-align: center;
+        -webkit-text-stroke: 2px #EB212E;
+        font-size: 34px;
+        margin-bottom: 20px;
+    }
+    #iconic-quote{
+        color: #EB212E;
+        font-size: 16px;
+        font-family: 'Star Jedi';
+    }
+    .titre{
+        border: 4px solid #EB212E;
+        font-size: 12px;
+        padding: 10px;
+        margin: 6px;
+    }
+    .lestrois{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .infos{
+        width: 46vw;
+        display: flex;
+        font-size: 10px;
+        flex-direction: column;
+    }
+    .poster:hover{
+        display: none;
+    }
+
+    /* PAGE 2 MOVIES */
+    #page2{
+        height: 100vh;
+        border: 4px solid #EB212E;
+        background-color: black;
+    }
+    .spiderverse{
+        width: 80%;
+        height: 40%;
+        border: 4px solid #EB212E;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    #miles{
+        height: 100px;
+        width: 68px;
+    }
+    .dead-poets-society{
+        width: 80%;
+        height: 40%;
+        border: 4px solid #EB212E;
+        margin: 6px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    #poets{
+        height: 100px;
+        width: 68px;
+    }
+    .tenet{
+        width: 80%;
+        height: 40%;
+        border: 4px solid #EB212E;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    #protagonist{
+        height: 100px;
+        width: 68px;
+    }
+    /* PAGE 3 SERIES */
+    #page3{
+        height: 100vh;
+        background-color: black;
+        border: 4px solid #EB212E;
+    }
+    .loki{
+        width: 80%;
+        height: 40%;
+        border: 4px solid #EB212E;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    #green{
+        height: 100px;
+        width: 68px;
+    }
+    .dp{
+        width: 80%;
+        height: 40%;
+        border: 4px solid #EB212E;
+        margin: 6px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    #military{
+        height: 100px;
+        width: 68px;
+    }
+    .abbottelementary {
+        width: 80%;
+        height: 40%;
+        border: 4px solid #EB212E;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    #school{
+        height: 100px;
+        width: 68px;
+    }
+    /* FOOTER CONTACT*/
+    footer{
+        height: 100vh;
+        background-color: black;
+        background-image: url("dark\ vador\ dancing.gif");
+        background-size: contain;
+        border: 4px solid #EB212E;
+    }
+    .contact-un{
+        border-bottom: 2px solid #EB212E;
+    }
+    .copyright{
+        font-size: 12px;
+        font-weight: lighter;
+        text-align: center;
+        padding: 8px;
+        margin: 8px;
+        border-bottom: 2px solid #EB212E;
+    }
+    .contact-deux{
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: 2px solid #EB212E;
+        padding: 10px;
+    }
+    .social{
+        width:26px;
+    }
+    .contact-trois{
+        border-bottom: 2px solid #EB212E;
+    }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-2-9 10:55:14
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand-fwd
+ * ----------------------------------------
+ */
+ @-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
